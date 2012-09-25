@@ -1,3 +1,5 @@
+require "connection_pool"
+
 class FnordMetric::API
 
   @@opts = nil
