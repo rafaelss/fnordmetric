@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
   s.add_dependency "yajl-ruby"
   s.add_dependency "thin", "~> 1.4.1"
   s.add_dependency "activesupport"
+  s.add_dependency "connection_pool", "~> 0.9.2"
 
   s.add_development_dependency "delorean"
   s.add_development_dependency "rspec", "~> 2.8.0"

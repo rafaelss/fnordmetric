@@ -8,7 +8,9 @@ class FnordMetric::API
   end
 
   def connect
-    @redis = Redis.connect(:url => @@opts[:redis_url])
+    @redis = ConnectionPool::Wrapper.new(:size => 5, :timeout => 5) do
+      Redis.connect(:url => @@opts[:redis_url])
+    end
   end
 
   def event(event_data)
