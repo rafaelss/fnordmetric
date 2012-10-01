@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rack"
   s.add_dependency "rack-test"
   s.add_dependency "yajl-ruby"
-  s.add_dependency "thin", "~> 1.4.1"
+  s.add_dependency "thin", "~> 1.5.0"
   s.add_dependency "activesupport"
   s.add_dependency "connection_pool", "~> 0.9.2"
 
